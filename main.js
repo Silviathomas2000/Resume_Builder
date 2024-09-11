@@ -7,10 +7,17 @@ import {  cancelObjectiveForm , Objective, ObjectiveManager ,  onObjectiveClick,
 import {  cancelAcademicForm , Academic, AcademicManager ,  onAcademicClick, submitAcademicForm} from "./academic.js";
 import {  cancelProjectForm , Project, ProjectManager ,  onProjectClick, submitProjectForm} from "./project.js";
 import {  cancelInternshipForm , Internship, InternshipManager ,  onInternshipClick, submitInternshipForm} from "./internship.js";
+import {  cancelNameForm , Name, NameManager ,  onNameClick, submitNameForm} from "./name.js";
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  NameManager.loadName();
 
-
+  document.getElementById('nameid').addEventListener('click', onNameClick);
+  document.getElementById('name-submit-btn').addEventListener('click', submitNameForm);
+  document.getElementById('name-cancel-btn').addEventListener('click', cancelNameForm);
+});
+ 
 document.addEventListener("DOMContentLoaded", () => {
   ContactManager.loadContacts();
 
