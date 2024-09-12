@@ -1301,16 +1301,18 @@ hr {
 }
 
 .name-container strong {
-  font-size: 16px;
+  font-size: 40px;
   margin-right: 10px;
+  align-items: center;
 }
 
 .name-container input[type="button"] {
 
-  position: absolute;
+  /* position: absolute; */
   right: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
+  width: 10%;
 }
 
 
@@ -1402,7 +1404,7 @@ hr {
 .name-container {
   flex: 1;
   position: relative;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   
   font-size: 100px;
@@ -1424,6 +1426,7 @@ button {
   top: 100%;
   left: 0;
   margin-top: 3px;
+  align-items: center;
 
 }
 
