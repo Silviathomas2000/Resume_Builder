@@ -328,7 +328,7 @@ button {
 }
 
 #contact-submit-btn {
-  background-color: #4CAF50;
+  background-color: #007bff;
   
   color: rgb(0, 0, 0);
 }
@@ -338,7 +338,7 @@ button {
 }
 
 #contact-cancel-btn {
-  background-color: #e94a4a;
+  background-color: #007bff;
   color: rgb(0, 0, 0);
 }
 
@@ -450,7 +450,7 @@ button {
 }
 
 #certification-submit-btn {
-  background-color: #4caf50;
+  background-color: #007bff;
   color: rgb(0, 0, 0);
 }
 
@@ -459,7 +459,7 @@ button {
 }
 
 #certification-cancel-btn {
-  background-color: #e94a4a;
+  background-color: #007bff;
   color: white;
 }
 
@@ -687,7 +687,7 @@ hr {
 }
 
 #skill-submit-btn {
-  background-color: #4caf50;
+  background-color: #007bff;
   color: white;
 }
 
@@ -696,7 +696,7 @@ hr {
 }
 
 #skill-cancel-btn {
-  background-color: #e94a4a;
+  background-color: #007bff;
   color: white;
 }
 
@@ -1300,14 +1300,6 @@ hr {
 
 }
 
-
-
-/* .name-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-} */
-
 .name-container strong {
   font-size: 16px;
   margin-right: 10px;
@@ -1328,28 +1320,31 @@ hr {
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #f9f9f9;
+  
 }
 
 .name-form-section input[type="text"],
 .name-form-section input[type="text"] {
-  display: block;
-  margin: 10px 0;
+ 
+ 
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  width: 75px;
   width: 80%;
 }
 
 .name-form-section input[type="button"] {
 
-  margin: 5px;
-  padding: 10px 15px;
+  margin: 2px;
+  padding: 10px;
   font-size: 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
+  width: 50px;
+  
 
 }
 
@@ -1432,6 +1427,25 @@ button {
 
 }
 
+#template-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
+.template-link {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+  border: 1px solid transparent;
+}
 
-
+.template-link:hover {
+  background-color: #0056b3;
+}

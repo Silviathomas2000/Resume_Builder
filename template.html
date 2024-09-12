@@ -4,19 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silvia Thomas - Resume</title>
-  <link rel="stylesheet" href="resume_silvia.css">
+  <link rel="stylesheet" href="resume_silvia2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script type="module" src="main.js" defer></script>
   
 </head>
 <body>
+  <div id="template-buttons"></div>
+    <a href="index.html" id="template1-link" class="template-link" >Template 1</a>
+    <a href="template.html" id="template2-link" class="template-link">Template 2</a>
+  </div>
   <div id="form-container">
     <div class="header">
       <div class="image"></div>
       <div class="box">
-        <span id="name-display"></span>
-        <input type="text" id="name-input" placeholder="Enter your name"/>
-        <button id="save-button" class="hidden">Save</button>
+        <p class="name-container">
+          <strong>Enter Your Name</strong>
+            <input type="button" id="nameid" name="name" value="+" />
+          </p>
+          <div id="name-display"> </div>
+          
+          <div id="name-form-section" class="name-input-section hide">
+            <input type="text" id="firstname-input" placeholder="Enter your firstname " /><br>
+            <input type="text" id="lastname-input" placeholder="Enter your lastname " /><br>
+            
+            <input type="button" id="name-submit-btn" value="✓" onclick="submitNameForm()">
+            <input type="button" id="name-cancel-btn" value="✗" onclick="cancelNameForm()">
+        </div>
+          <p id="name-error" class="error-message"></p>
       
       </div>
     </div>
