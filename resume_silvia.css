@@ -5,19 +5,6 @@
 .show {
   display: block;
 }
-
-
-
-/* .hidden {
-  display: none;
-}
-#form-container {
-  margin: 20px;
-}
-.box {
-  margin: 10px 0;
-} */
-
 .header .box input {
   border: 1px solid #ccc;
   padding: 8px;
@@ -370,25 +357,6 @@ button {
   background-color: #919191;
 }
 
-/* .contact-card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #f9f9f9;
-}
-
-.contact-card button {
-  background-color: #bebebe;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.contact-card button:hover {
-  background-color: #919191;
-} */
 
 
 #error-message {
@@ -479,25 +447,6 @@ hr {
   margin-left: 0;
 }
 
-/* .cert-card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #f9f9f9;
-}
-
-.cert-card button {
-  background-color: #bebebe;
-  color: white;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.cert-card button:hover {
-  background-color: #919191;
-} */
 
 .cert-card {
   border: 1px solid #ddd;
@@ -532,108 +481,6 @@ hr {
 
 }
 
-/* .skill-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.skill-container strong {
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-.skill-container input[type="button"] {
-
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-.skill-form-section {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-}
-
-.skill-form-section input[type="text"] {
-  display: block;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 80%;
-}
-
-.skill-form-section input[type="button"] {
-
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-
-
-}
-
-#skill-submit-btn {
-  background-color: #c2c1c1;
-  color: white;
-}
-
-#skill-submit-btn:hover {
-  background-color: #adabab;
-}
-
-#skill-cancel-btn {
-  background-color: #b3b2b2;
-  color: white;
-}
-
-#skill-cancel-btn:hover {
-  background-color: #acaaaa;
-}
-
-
-#skill-display {
-  margin: 20px 0;
-}
-
-
-hr {
-  width: 30%;
-  text-align: left;
-  margin-left: 0;
-}
-
-.skill-card {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: #f9f9f9;
-}
-
-.skill-card button {
-  background-color: #bebebe;
-  color: white;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.skill-card button:hover {
-  background-color: #919191;
-}
-
-#displayValue {
-
-  top: 100%;
-  left: 0;
-  margin-top: 3px;
-
-} */
 
 .skill-container {
   position: relative;
