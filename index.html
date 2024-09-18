@@ -10,6 +10,7 @@
   
 </head>
 <body>
+  <button id="print-button">Print Resume</button>
   <div id="template-buttons">
     <a href="index.html" id="template1-link" class="template-link" >Template 1</a>
     <a href="template.html" id="template2-link" class="template-link">Template 2</a>
@@ -35,6 +36,13 @@
       
       </div>
     </div>
+    <script>
+      document.getElementById('nameid').addEventListener('click', function() {
+        document.getElementById('name-display').textContent = name;
+        document.querySelector('.name-container').classList.add('hide');
+      });
+    </script>
+    
     
     <div class="container">
       <div class="box2">
@@ -86,8 +94,6 @@
           <input type="button" id="certification-cancel-btn" value="✗" onclick="cancelCertificationForm()">
         </div>
         <p id="certification-error" class="error-message"></p>
-      
-      
         <p class="strength-container">
         <strong>STRENGTH</strong>
         <input type="button" id="strengthid" name="strength" value="+" />

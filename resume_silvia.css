@@ -5,11 +5,12 @@
 .show {
   display: block;
 }
+
 .header .box input {
   border: 1px solid #ccc;
   padding: 8px;
   font-size: 16px;
-  width: 100%; 
+  width: 100%;
 }
 
 .hidden {
@@ -20,7 +21,7 @@
   border: 1px solid #ccc;
   padding: 8px;
   font-size: 16px;
-  width: calc(100% - 150px); 
+  width: calc(100% - 150px);
 }
 
 .container {
@@ -51,7 +52,9 @@ button {
   font-weight: bold;
 }
 
-#name-input, #save-button, #cancel-button {
+#name-input,
+#save-button,
+#cancel-button {
   display: inline-block;
 }
 
@@ -79,7 +82,7 @@ button {
 
 
 .phone-number-input-section.hide {
-  display: none; 
+  display: none;
 }
 
 .phone-number-input-section.show {
@@ -199,6 +202,7 @@ button {
   font-size: 20px;
   margin-top: 5px;
 }
+
 .contact-container {
   position: relative;
   display: flex;
@@ -211,6 +215,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
 }
+
 #displayValue {
 
   top: 100%;
@@ -218,10 +223,12 @@ button {
   margin-top: 3px;
 
 }
+
 .container {
   display: flex;
   margin: 20px;
 }
+
 .button {
   padding: 10px 15px;
   font-size: 16px;
@@ -253,6 +260,7 @@ button {
   align-items: center;
   margin: 5px 0;
 }
+
 .remove-button {
   margin-left: 10px;
   background-color: #d8d8d8;
@@ -261,9 +269,11 @@ button {
   padding: 5px;
   cursor: pointer;
 }
+
 .remove-button:hover {
   background-color: #e94a4a;
 }
+
 .contact-form-section {
   margin-top: 20px;
   padding: 10px;
@@ -289,6 +299,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .contact-form-section {
   margin-top: 20px;
   padding: 10px;
@@ -316,7 +327,7 @@ button {
 
 #contact-submit-btn {
   background-color: #007bff;
-  
+
   color: rgb(0, 0, 0);
 }
 
@@ -339,7 +350,7 @@ button {
   padding: 15px;
   margin: 10px 0;
   background-color: #f9f9f9;
-  position: relative; 
+  position: relative;
 }
 
 .contact-card button {
@@ -348,9 +359,9 @@ button {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .contact-card button:hover {
@@ -454,7 +465,7 @@ hr {
   padding: 15px;
   margin: 10px 0;
   background-color: #f9f9f9;
-  position: relative; 
+  position: relative;
 }
 
 .cert-card button {
@@ -463,9 +474,9 @@ hr {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .cert-card button:hover {
@@ -570,7 +581,7 @@ hr {
   padding: 15px;
   margin: 10px 0;
   background-color: #f9f9f9;
-  position: relative; 
+  position: relative;
 }
 
 .skill-card button {
@@ -579,9 +590,9 @@ hr {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  position: absolute; 
-  top: 10px; 
-  right: 10px; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .skill-card button:hover {
@@ -1169,13 +1180,13 @@ hr {
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #f9f9f9;
-  
+
 }
 
 .name-form-section input[type="text"],
 .name-form-section input[type="text"] {
- 
- 
+
+
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -1193,7 +1204,7 @@ hr {
   border-radius: 4px;
   cursor: pointer;
   width: 50px;
-  
+
 
 }
 
@@ -1228,7 +1239,7 @@ hr {
 }
 
 .name-card {
- 
+
   border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 10px;
@@ -1253,7 +1264,7 @@ hr {
   position: relative;
   /* display: flex; */
   align-items: center;
-  
+
   font-size: 100px;
   ;
 }
@@ -1298,4 +1309,13 @@ button {
 
 .template-link:hover {
   background-color: #0056b3;
+}
+
+@media print {
+  #print-button {
+      display: none;
+  }
+  body {
+      font-size: 12pt;
+  }
 }

@@ -4,8 +4,15 @@ body {
     margin: 0;
     padding: 0;
     font: 1em sans-serif;
+    align-items: center;
+    justify-content: center;
+    
   }
-  
+
+
+  .hide {
+    display: none;
+  }
   #form-container {
 
     
@@ -73,31 +80,13 @@ body {
   }
   
   p {
-    margin: 0;
-    padding: 0;
-  } #template-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
+    margin: 3px;
+    padding: 10px;
+  } 
   
-  .template-link {
-    text-decoration: none;
-    background-color: #007bff;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin: 0 10px;
-    transition: background-color 0.3s;
-    border: 1px solid transparent;
-    
-  }
+ 
   
-  .template-link:hover {
-    background-color: #0056b3;
-  }
+ 
   
   
   
@@ -107,6 +96,8 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    border: #ddd;
+  
   }
   
   .name-container input[type="button"], .contact-container input[type="button"], .skill-container input[type="button"], .certification-container input[type="button"], .strength-container input[type="button"], .objective-container input[type="button"], .academic-container input[type="button"], .project-container input[type="button"], .internship-container input[type="button"] {
@@ -131,18 +122,18 @@ body {
       width: calc(100% - 16px);
     }
   }
-  /* Center the content inside the name-display container */
+  
 #name-display {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Optional, for center-aligning text */
-  font-weight: bold; /* Make text bold */
-  font-size: 2em; /* Adjust font size as needed */
-  margin-top: 10px; /* Optional, adds space above the displayed content */
+  text-align: center; 
+  font-weight: bold; 
+  font-size: 2em; 
+  margin-top: 10px; 
 }
 
-/* Center the content inside the name-container */
+
 .name-container {
   display: flex;
   align-items: center;
@@ -150,8 +141,28 @@ body {
   margin-bottom: 15px;
 }
 
-/* Ensure the strong text is also bold and larger */
+
 .name-container strong {
-  font-size: 1.5em; /* Adjust font size as needed */
-  font-weight: bold; /* Ensure text is bold */
+  font-size: 1.5em; 
+  font-weight: bold; 
 }
+
+#template-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.template-link {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+  border: 1px solid transparent;
+}
+

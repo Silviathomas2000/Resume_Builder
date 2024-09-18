@@ -35,6 +35,12 @@
       
       </div>
     </div>
+    <script>
+      document.getElementById('nameid').addEventListener('click', function() {
+        document.getElementById('name-display').textContent = name;
+        document.querySelector('.name-container').classList.add('hide');
+      });
+    </script>
     
     <div class="container">
       <div class="box2">
