@@ -10,21 +10,19 @@ import {  cancelInternshipForm , Internship, InternshipManager ,  onInternshipCl
 import {  cancelNameForm , Name, NameManager ,  onNameClick, submitNameForm} from "./name.js";
 
 
-document.getElementById("print-button").addEventListener("click", function() {
-  window.print();
-});
+// document.getElementById("print-button").addEventListener("click", function() {
+//   window.print();
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   NameManager.loadName();
 
   document.getElementById("nameid").addEventListener("click", onNameClick);
-  document
-    .getElementById("name-submit-btn")
-    .addEventListener("click", submitNameForm);
-  document
-    .getElementById("name-cancel-btn")
-    .addEventListener("click", cancelNameForm);
+  document.getElementById("name-submit-btn").addEventListener("click", submitNameForm);
+  document.getElementById("name-cancel-btn").addEventListener("click", cancelNameForm);
 });
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   ContactManager.loadContacts();

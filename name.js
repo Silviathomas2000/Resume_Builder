@@ -44,7 +44,7 @@ export class Name {
 export class NameManager {
   static saveNameDetails(name) {
     let nameDetails = JSON.parse(sessionStorage.getItem("name")) || [];
-    nameDetails.push(name);
+    nameDetails.push({ firstname: name.firstname, lastname: name.lastname });
     sessionStorage.setItem("name", JSON.stringify(nameDetails));
   }
 
@@ -65,7 +65,7 @@ export class NameManager {
   static removeName(name, cardElement) {
     let nameDetails = JSON.parse(sessionStorage.getItem("name")) || [];
     nameDetails = nameDetails.filter(
-      (c) => JSON.stringify(c) !== JSON.stringify(name)
+      (c) => JSON.stringify(c) !== JSON.stringify({ firstname: name.firstname, lastname: name.lastname })
     );
     sessionStorage.setItem("name", JSON.stringify(nameDetails));
     cardElement.remove();
@@ -73,15 +73,15 @@ export class NameManager {
 }
 
 export function onNameClick() {
-  document.getElementById("name-form-section").className =
-    "name-form-section show";
+  document.getElementById("name-form-section").className = "name-form-section show";
   document.getElementById("name-error").textContent = "";
+  document.getElementById("nameid").style.display = "none";
 }
 
 export function cancelNameForm() {
-  document.getElementById("name-form-section").className =
-    "name-form-section hide";
+  document.getElementById("name-form-section").className = "name-form-section hide";
   document.getElementById("name-error").textContent = "";
+  document.getElementById("nameid").style.display = "block";
 }
 
 export function submitNameForm() {
@@ -92,9 +92,19 @@ export function submitNameForm() {
     let name = new Name(firstname, lastname);
     NameManager.saveNameDetails(name);
     NameManager.displayNameCard(name);
-    cancelNameForm();
+    document.getElementById("name-form-section").className = "name-form-section hide";
+    document.getElementById("nameid").style.display = "none";
   } else {
-    document.getElementById("NAME-error").textContent =
-      "Please fill in at least one field.";
+    document.getElementById("name-error").textContent = "Please fill in at least one field.";
   }
 }
+
+
+document.getElementById("nameid").addEventListener("click", onNameClick);
+document.getElementById("name-cancel-btn").addEventListener("click", cancelNameForm);
+document.getElementById("name-submit-btn").addEventListener("click", submitNameForm);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  NameManager.loadName();
+});
